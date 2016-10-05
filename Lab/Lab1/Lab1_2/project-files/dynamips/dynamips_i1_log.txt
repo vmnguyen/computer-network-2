@@ -1,0 +1,68 @@
+Aug 26 23:03:32.260 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Aug 26 23:03:32.260 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41517.
+Aug 26 23:03:32.262 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 26 23:03:32.263 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bob/GNS3/projects/Lab1_2/project-files/dynamips 
+Aug 26 23:03:32.263 GENERAL: working_dir=/home/bob/GNS3/projects/Lab1_2/project-files/dynamips
+Aug 26 23:03:32.263 HYPERVISOR: exec_cmd: vm create R1 7 c2600 
+Aug 26 23:03:32.263 VM: VM R1 created.
+Aug 26 23:03:32.264 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Aug 26 23:03:32.264 HYPERVISOR: exec_cmd: c2600 get_mac_addr R1 
+Aug 26 23:03:32.265 HYPERVISOR: exec_cmd: c2600 set_iomem R1 5 
+Aug 26 23:03:32.265 HYPERVISOR: exec_cmd: vm set_ram R1 160 
+Aug 26 23:03:32.266 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 16 WIC-1T 
+Aug 26 23:03:32.267 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 32 WIC-2T 
+Aug 26 23:03:32.267 HYPERVISOR: exec_cmd: c2600 set_mac_addr R1 c807.085e.0000 
+Aug 26 23:03:32.268 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 48 WIC-1T 
+Aug 26 23:03:32.268 HYPERVISOR: exec_cmd: vm set_ios R1 /home/bob/GNS3/images/IOS/c2600-i-mz.123-9.image 
+Aug 26 23:03:32.269 HYPERVISOR: exec_cmd: vm set_sparse_mem R1 1 
+Aug 26 23:03:32.270 HYPERVISOR: exec_cmd: vm set_config R1 configs/i7_startup-config.cfg 
+Aug 26 23:03:32.333 HYPERVISOR: exec_cmd: nio create_udp udp-f733727d-0908-479f-8e6d-292119d4a823 10000 127.0.0.1 10001 
+Aug 26 23:03:32.334 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 16 udp-f733727d-0908-479f-8e6d-292119d4a823 
+Aug 26 23:03:32.335 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:03:34.836 HYPERVISOR: exec_cmd: vm create Ghost 0 c2600 
+Aug 26 23:03:34.836 VM: VM Ghost created.
+Aug 26 23:03:34.837 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/bob/GNS3/images/IOS/c2600-i-mz.123-9.image 
+Aug 26 23:03:34.838 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Aug 26 23:03:34.839 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c2600-i-mz.123-9.image-160.ghost 
+Aug 26 23:03:34.839 HYPERVISOR: exec_cmd: vm set_ram Ghost 160 
+Aug 26 23:03:34.840 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 26 23:03:34.840 HYPERVISOR: exec_cmd: vm start Ghost 
+Aug 26 23:03:35.062 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 26 23:03:35.063 HYPERVISOR: exec_cmd: vm stop Ghost 
+Aug 26 23:03:35.442 VM: VM Ghost shutdown.
+Aug 26 23:03:35.443 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Aug 26 23:03:35.443 VM: VM Ghost destroyed.
+Aug 26 23:03:35.444 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Aug 26 23:03:35.446 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c2600-i-mz.123-9.image-160.ghost 
+Aug 26 23:03:35.446 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:03:35.447 HYPERVISOR: exec_cmd: vm start R1 
+Aug 26 23:03:35.448 GHOST: loaded ghost image c2600-i-mz.123-9.image-160.ghost (fd=10) at addr=0x7fa426000000 (size=0xa000000)
+Aug 26 23:03:35.448 GHOST: loaded image c2600-i-mz.123-9.image-160.ghost successfully.
+Aug 26 23:04:03.228 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:04:03.229 HYPERVISOR: exec_cmd: vm set_idle_pc_online R1 0 0x0 
+Aug 26 23:04:03.231 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:04:03.233 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:04:03.233 HYPERVISOR: exec_cmd: vm get_idle_pc_prop R1 0 
+Aug 26 23:04:13.369 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:04:13.370 HYPERVISOR: exec_cmd: vm set_idle_pc_online R1 0 0x805008b8 
+Aug 26 23:04:13.371 HYPERVISOR: exec_cmd: vm cpu_usage R1 0 
+Aug 26 23:04:16.410 HYPERVISOR: exec_cmd: vm cpu_usage R1 0 
+Aug 26 23:05:35.712 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:05:35.713 HYPERVISOR: exec_cmd: vm set_idle_pc_online R1 0 0x0 
+Aug 26 23:05:35.714 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:05:35.715 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:05:35.716 HYPERVISOR: exec_cmd: vm get_idle_pc_prop R1 0 
+Aug 26 23:05:45.845 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:05:45.846 HYPERVISOR: exec_cmd: vm set_idle_pc_online R1 0 0x805008b8 
+Aug 26 23:05:45.847 HYPERVISOR: exec_cmd: vm cpu_usage R1 0 
+Aug 26 23:05:48.886 HYPERVISOR: exec_cmd: vm cpu_usage R1 0 
+Aug 26 23:08:16.719 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:08:16.727 HYPERVISOR: exec_cmd: vm slot_disable_nio R1 0 16 
+Aug 26 23:08:16.740 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 16 
+Aug 26 23:08:16.741 HYPERVISOR: exec_cmd: nio delete udp-f733727d-0908-479f-8e6d-292119d4a823 
+Aug 26 23:08:16.745 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:08:16.746 HYPERVISOR: exec_cmd: vm stop R1 
+Aug 26 23:08:26.759 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 26 23:08:26.796 HYPERVISOR: exec_cmd: vm delete R1 
+Aug 26 23:08:36.811 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 26 23:08:37.046 HYPERVISOR: Stopped.

@@ -1,0 +1,27 @@
+Aug 26 23:19:17.180 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Aug 26 23:19:17.180 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46519.
+Aug 26 23:19:17.193 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 26 23:19:17.193 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bob/GNS3/projects/Lab1_2/project-files/dynamips 
+Aug 26 23:19:17.193 GENERAL: working_dir=/home/bob/GNS3/projects/Lab1_2/project-files/dynamips
+Aug 26 23:19:17.194 HYPERVISOR: exec_cmd: vm create R1 3 c2691 
+Aug 26 23:19:17.194 VM: VM R1 created.
+Aug 26 23:19:17.194 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Aug 26 23:19:17.195 HYPERVISOR: exec_cmd: c2691 get_mac_addr R1 
+Aug 26 23:19:17.195 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Aug 26 23:19:17.196 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Aug 26 23:19:17.197 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Aug 26 23:19:17.197 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 32 WIC-1T 
+Aug 26 23:19:17.198 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:19:17.198 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60a2c5e4 
+Aug 26 23:19:17.199 HYPERVISOR: exec_cmd: c2691 set_mac_addr R1 c003.0b62.0000 
+Aug 26 23:19:17.199 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 16 WIC-1T 
+Aug 26 23:19:17.200 HYPERVISOR: exec_cmd: vm set_ios R1 /home/bob/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+Aug 26 23:19:17.201 HYPERVISOR: exec_cmd: vm set_config R1 configs/i3_startup-config.cfg 
+Aug 26 23:19:17.263 HYPERVISOR: exec_cmd: nio create_udp udp-d2d5f8bc-6737-4b04-a2af-3f237dc9a7d0 10000 127.0.0.1 10001 
+Aug 26 23:19:17.264 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 16 udp-d2d5f8bc-6737-4b04-a2af-3f237dc9a7d0 
+Aug 26 23:19:17.265 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:21:21.929 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 26 23:21:22.266 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 26 23:21:22.483 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 26 23:21:22.680 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 26 23:21:22.877 HYPERVISOR: exec_cmd: vm extract_config R1 

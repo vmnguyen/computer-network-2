@@ -1,0 +1,48 @@
+Aug 26 23:09:23.331 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Aug 26 23:09:23.331 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41245.
+Aug 26 23:09:23.348 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 26 23:09:23.349 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bob/GNS3/projects/Lab1_2/project-files/dynamips 
+Aug 26 23:09:23.349 GENERAL: working_dir=/home/bob/GNS3/projects/Lab1_2/project-files/dynamips
+Aug 26 23:09:23.350 HYPERVISOR: exec_cmd: vm create R2 4 c2691 
+Aug 26 23:09:23.350 VM: VM R2 created.
+Aug 26 23:09:23.350 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Aug 26 23:09:23.351 HYPERVISOR: exec_cmd: c2691 get_mac_addr R2 
+Aug 26 23:09:23.351 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Aug 26 23:09:23.352 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+Aug 26 23:09:23.352 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Aug 26 23:09:23.353 HYPERVISOR: exec_cmd: vm set_ios R2 /home/bob/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+Aug 26 23:09:23.354 HYPERVISOR: exec_cmd: vm set_config R2 configs/i4_startup-config.cfg 
+Aug 26 23:09:38.112 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 32 WIC-1T 
+Aug 26 23:09:38.113 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-1T 
+Aug 26 23:09:43.363 HYPERVISOR: exec_cmd: nio create_udp udp-9b7067fe-37b6-4e56-91e4-4da4d5f170c6 10000 127.0.0.1 10001 
+Aug 26 23:09:43.368 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 16 udp-9b7067fe-37b6-4e56-91e4-4da4d5f170c6 
+Aug 26 23:09:43.369 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:09:46.205 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Aug 26 23:09:46.206 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c2691-entservicesk9-mz.124-13b.image-192.ghost 
+Aug 26 23:09:46.206 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:09:46.207 HYPERVISOR: exec_cmd: vm start R2 
+Aug 26 23:10:37.614 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:10:37.614 HYPERVISOR: exec_cmd: vm set_idle_pc_online R2 0 0x6114a604 
+Aug 26 23:10:44.075 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:10:44.076 HYPERVISOR: exec_cmd: vm set_idle_pc_online R2 0 0x0 
+Aug 26 23:10:44.076 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:10:44.077 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:10:44.078 HYPERVISOR: exec_cmd: vm get_idle_pc_prop R2 0 
+Aug 26 23:10:54.192 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:10:54.192 HYPERVISOR: exec_cmd: vm set_idle_pc_online R2 0 0x60a2c5e4 
+Aug 26 23:10:54.193 HYPERVISOR: exec_cmd: vm cpu_usage R2 0 
+Aug 26 23:10:57.233 HYPERVISOR: exec_cmd: vm cpu_usage R2 0 
+Aug 26 23:16:07.669 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 23:16:08.218 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 23:16:21.602 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:16:21.603 HYPERVISOR: exec_cmd: vm stop R2 
+Aug 26 23:16:21.671 VM: VM R2 shutdown.
+Aug 26 23:16:21.673 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 23:17:27.408 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 23:17:27.413 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:17:27.414 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 23:17:27.417 HYPERVISOR: exec_cmd: vm delete R2 
+Aug 26 23:17:27.418 VM: VM R2 destroyed.
+Aug 26 23:17:27.418 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 26 23:17:27.825 HYPERVISOR: Stopped.
+Aug 26 23:17:27.825 GENERAL: reset done.

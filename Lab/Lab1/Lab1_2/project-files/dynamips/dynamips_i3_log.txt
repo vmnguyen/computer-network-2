@@ -1,0 +1,30 @@
+Aug 26 23:08:42.594 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Aug 26 23:08:42.594 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57915.
+Aug 26 23:08:42.609 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 26 23:08:42.610 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bob/GNS3/projects/Lab1_2/project-files/dynamips 
+Aug 26 23:08:42.610 GENERAL: working_dir=/home/bob/GNS3/projects/Lab1_2/project-files/dynamips
+Aug 26 23:08:42.610 HYPERVISOR: exec_cmd: vm create R1 1 c3600 
+Aug 26 23:08:42.611 VM: VM R1 created.
+Aug 26 23:08:42.611 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Aug 26 23:08:42.611 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+Aug 26 23:08:42.612 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:08:42.613 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 NM-16ESW 
+Aug 26 23:08:42.613 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Aug 26 23:08:42.614 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Aug 26 23:08:42.614 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:08:42.615 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60672c68 
+Aug 26 23:08:42.615 HYPERVISOR: exec_cmd: vm set_ios R1 /home/bob/GNS3/images/IOS/c3640-ik9o3s-mz124-13.image 
+Aug 26 23:08:42.616 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:08:42.616 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1E 
+Aug 26 23:08:42.617 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:08:42.617 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-4E 
+Aug 26 23:08:42.618 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:08:42.618 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 NM-1FE-TX 
+Aug 26 23:08:42.619 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Aug 26 23:09:12.699 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 26 23:09:12.700 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 26 23:09:12.701 HYPERVISOR: exec_cmd: vm delete R1 
+Aug 26 23:09:12.701 VM: VM R1 destroyed.
+Aug 26 23:09:12.703 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 26 23:09:13.139 HYPERVISOR: Stopped.
+Aug 26 23:09:13.139 GENERAL: reset done.

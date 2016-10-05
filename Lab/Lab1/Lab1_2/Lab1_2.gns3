@@ -1,0 +1,176 @@
+{
+    "auto_start": false,
+    "name": "Lab1_2",
+    "project_id": "a502e041-bc14-43d1-b36e-1303e0c39e54",
+    "revision": 4,
+    "topology": {
+        "links": [
+            {
+                "description": "Link from R1 port Serial0/0 to R2 port Serial0/0",
+                "destination_node_id": 14,
+                "destination_port_id": 170,
+                "id": 1,
+                "source_node_id": 13,
+                "source_port_id": 168
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Router c2691",
+                "dynamips_id": 3,
+                "id": 13,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R1",
+                    "x": 19.484375,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 163,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 164,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 167,
+                        "name": "Serial0/1",
+                        "port_number": 32
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R2 on port Serial0/0",
+                        "id": 168,
+                        "link_id": 1,
+                        "name": "Serial0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 16
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 5000,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60a2c5e4",
+                    "idlesleep": 30,
+                    "image": "c2691-entservicesk9-mz.124-13b.image",
+                    "image_md5sum": "306402b874eb783036d6c7c64a100e59",
+                    "iomem": 5,
+                    "mac_addr": "c003.0b62.0000",
+                    "mmap": true,
+                    "name": "R1",
+                    "nvram": 256,
+                    "platform": "c2691",
+                    "ram": 192,
+                    "slot0": "GT96100-FE",
+                    "sparsemem": true,
+                    "startup_config": "configs/i3_startup-config.cfg",
+                    "system_id": "FTX0945W0MY",
+                    "wic0": "WIC-1T",
+                    "wic1": "WIC-1T"
+                },
+                "server_id": 1,
+                "type": "C2691",
+                "vm_id": "5832e8a5-90e6-4106-9676-27393d92beb3",
+                "x": -257.0,
+                "y": -91.0
+            },
+            {
+                "description": "Router c2691",
+                "dynamips_id": 4,
+                "id": 14,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R2",
+                    "x": 21.484375,
+                    "y": -19.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 165,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 166,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 169,
+                        "name": "Serial0/1",
+                        "port_number": 32
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R1 on port Serial0/0",
+                        "id": 170,
+                        "link_id": 1,
+                        "name": "Serial0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 16
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 5001,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60a2c5e4",
+                    "idlesleep": 30,
+                    "image": "c2691-entservicesk9-mz.124-13b.image",
+                    "image_md5sum": "306402b874eb783036d6c7c64a100e59",
+                    "iomem": 5,
+                    "mac_addr": "c004.0b71.0000",
+                    "mmap": true,
+                    "name": "R2",
+                    "nvram": 256,
+                    "platform": "c2691",
+                    "ram": 192,
+                    "slot0": "GT96100-FE",
+                    "sparsemem": true,
+                    "startup_config": "configs/i4_startup-config.cfg",
+                    "system_id": "FTX0945W0MY",
+                    "wic0": "WIC-1T",
+                    "wic1": "WIC-1T"
+                },
+                "server_id": 1,
+                "type": "C2691",
+                "vm_id": "524b4eeb-2290-488d-9889-140f7640780f",
+                "x": 47.0,
+                "y": -93.0
+            }
+        ],
+        "servers": [
+            {
+                "host": "127.0.0.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.1"
+}

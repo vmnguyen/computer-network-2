@@ -1,0 +1,57 @@
+Aug 26 22:41:28.535 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Aug 26 22:41:28.535 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42739.
+Aug 26 22:41:28.550 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 26 22:41:28.550 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bob/GNS3/projects/Lab1_2/project-files/dynamips 
+Aug 26 22:41:28.550 GENERAL: working_dir=/home/bob/GNS3/projects/Lab1_2/project-files/dynamips
+Aug 26 22:41:28.551 HYPERVISOR: exec_cmd: vm create R2 8 c2600 
+Aug 26 22:41:28.551 VM: VM R2 created.
+Aug 26 22:41:28.551 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Aug 26 22:41:28.551 HYPERVISOR: exec_cmd: c2600 get_mac_addr R2 
+Aug 26 22:41:28.552 HYPERVISOR: exec_cmd: vm set_ram R2 160 
+Aug 26 22:41:28.553 HYPERVISOR: exec_cmd: vm set_ios R2 /home/bob/GNS3/images/IOS/c2600-i-mz.123-9.image 
+Aug 26 22:41:28.553 HYPERVISOR: exec_cmd: vm set_sparse_mem R2 1 
+Aug 26 22:41:28.554 HYPERVISOR: exec_cmd: c2600 set_iomem R2 5 
+Aug 26 22:41:28.554 HYPERVISOR: exec_cmd: vm set_config R2 configs/i8_startup-config.cfg 
+Aug 26 22:44:10.090 HYPERVISOR: exec_cmd: nio create_udp udp-7c902aee-e388-41d6-83ca-812a769e9db6 10001 127.0.0.1 10000 
+Aug 26 22:44:10.094 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-7c902aee-e388-41d6-83ca-812a769e9db6 
+Aug 26 22:44:10.095 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 22:44:13.823 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 22:44:13.824 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 0 0 
+Aug 26 22:44:13.825 HYPERVISOR: exec_cmd: nio delete udp-7c902aee-e388-41d6-83ca-812a769e9db6 
+Aug 26 22:44:19.544 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Aug 26 22:44:19.545 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c2600-i-mz.123-9.image-160.ghost 
+Aug 26 22:44:19.546 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 22:44:19.547 HYPERVISOR: exec_cmd: vm start R2 
+Aug 26 22:44:19.549 GHOST: loaded ghost image c2600-i-mz.123-9.image-160.ghost (fd=9) at addr=0x7f6992000000 (size=0xa000000)
+Aug 26 22:44:19.549 GHOST: loaded image c2600-i-mz.123-9.image-160.ghost successfully.
+Aug 26 22:46:51.316 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 22:46:51.317 HYPERVISOR: exec_cmd: vm stop R2 
+Aug 26 22:47:01.332 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 22:50:02.877 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 48 WIC-2T 
+Aug 26 22:50:02.879 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-1T 
+Aug 26 22:50:02.879 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 22:50:02.880 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Aug 26 22:50:02.881 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 32 WIC-2T 
+Aug 26 22:50:05.346 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 22:54:12.649 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 22:54:16.206 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 22:54:16.207 HYPERVISOR: exec_cmd: vm stop R2 
+Aug 26 22:54:26.225 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 22:55:04.442 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 22:59:34.687 HYPERVISOR: exec_cmd: nio create_udp udp-e2f5a148-3403-42b3-80f2-cb009bbf11be 10001 127.0.0.1 10000 
+Aug 26 22:59:34.694 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 16 udp-e2f5a148-3403-42b3-80f2-cb009bbf11be 
+Aug 26 22:59:34.695 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:00:39.887 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:00:39.888 HYPERVISOR: exec_cmd: vm stop R2 
+Aug 26 23:00:49.918 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 23:00:49.931 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:00:49.941 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:00:49.942 HYPERVISOR: exec_cmd: vm stop R2 
+Aug 26 23:00:59.962 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 23:02:12.279 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 23:02:12.352 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 26 23:02:12.354 HYPERVISOR: exec_cmd: vm stop R2 
+Aug 26 23:02:22.388 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 26 23:02:22.390 HYPERVISOR: exec_cmd: vm delete R2 
+Aug 26 23:02:32.408 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 26 23:02:32.776 HYPERVISOR: Stopped.
