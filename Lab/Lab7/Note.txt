@@ -1,0 +1,21 @@
+Router ID: lua chon theo IP lon nhat
+Note: - Chi tinh nhung interface dang bat (up)
+	  - Uu tien loopback, lua loopback cao nhat dau tien
+	  - Khi da lua chon xong roi, interface do cho du da tat di chang nua cung khong thay doi routerId
+	  - Co the lam bang tay bang lenh `routerid ...`
+
+
+AS - EIGRP - chi la mot so de dinh danh cac router cung la lang gieng cua nhau
+EIGRP: same AS, same Subnet, same parameter k
+
+types LSA
+2-way
+down
+
+point-to-point: allway in a 'full' status
+
+router DR: designated router
+BDR
+cach chon DR: - tie-break ( all routers has same priority) thi dua vao routerID
+			  - change priority manual
+show ip route ospf
